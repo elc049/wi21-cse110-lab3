@@ -11,36 +11,146 @@
   <header>
     <h1>Welcome to My User Page!</h1>
     <h2>Elizabeth Cho</h2>
-    <img src="https://kpbs.media.clients.ellingtoncms.com/img/photos/2018/07/17/CAMD8290.jpg">
+    <picture>
+      <source media="(min-width:650px)" srcset="https://kpbs.media.clients.ellingtoncms.com/img/photos/2018/07/17/CAMD8290.jpg">
+      <img src="https://kpbs.media.clients.ellingtoncms.com/img/photos/2018/07/17/CAMD8290.jpg">
+    </picture>
   </header>
   <hr>
   <h3>Navigation</h3>
   <nav>
-    <a href="google.com">Languages</a>
-    <a href="google.com">Languages</a>
+    <a href="ucsd.edu">School Page</a>
+    <a href="https://elc049.github.io/">User Page</a>
   </nav>
   <hr>
   <main>
     <section>
-      
+      <h3>Education</h3>
+      <iframe src="ucsd.edu" height="250" width="300" title="UCSD Page"></iframe>
+      <div>
+        <p>I attend UCSD as a <strong>Computer Science</strong> major. While there, I familiarized myself with many languages such as:</p><br>
+        <ul>
+          <li>C</li>
+          <li><b>C++</b></li>
+          <li>Java</li>
+          <li><b>Python</b></li>
+          <li>ARM Assembly</li>
+        </ul>
+        <p>Languages with particular proficiencies are <b>bolded</b><br>
+          An example of Java:</p>
+        <code>System.out.println("Hello, World!");</code>
+        <figure>
+          <img src="https://www.houseofbots.com/images/news/12146/cover.png">
+          <figcaption>Fig.1 - Language Popularity</figcaption>
+        </figure>
+        <p>Some IDEs/editors I've used include:</p>
+        <ol>
+          <li><i>vim</i></li>
+          <li>Atom</li>
+          <li>VSCode</li>
+        </ol>
+        <p>Editors with significant experience are <em>italicized</em>.</p>
+        <details>
+          <summary>Note</summary>
+          <p>Although I have experience with other languages and code editors, I've included only the ones with which I am strongly proficient/comfortable.</p>
+        </details>
+      </div>
+    </section>
+    <section>
+      <h3>Personal Interests</h3>
+      <p>This is a song I like <span style="color:red">a lot</span>.</p>
+      <audio src="DreamsOfYou.mp3" controls></audio>
+      <p>This is a video I like.</p>
+      <video width="320" height="240" controls>
+        <source src="https://www.youtube.com/watch?v=DHLiWNxa8Jo" type="video/mp4">
+      </video>
+      <p>This is a quote I like.</p>
+      <pre>
+      JOHN:      What about merit?
+
+      JESS:     …What about it?
+
+      JOHN:     Aside from family and–
+                    Doesn’t merit count for something?
+
+      JESS:     Depends.
+                    On who’s the judge.
+
+      -Martyna Majok
+      </pre>
+      <table>
+      <caption>Experience with CS Specialities</caption>
+      <colgroup>
+        <col style="background-color:blue">
+        <col style="background-color:green">
+        <col style="background-color:purple">
+      </colgroup>
+      <tr>
+        <th>Field</th>
+        <th>Proficiency</th>
+        <th>Interest</th>
+      </tr>
+      <tr>
+        <td>AI</td>
+        <td>Strong</td>
+        <td>Strong</td>
+      </tr>
+      <tr>
+        <td>Robotics</td>
+        <td>Low</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td>Hardware</td>
+        <td>Moderate</td>
+        <td>Low</td>
+      </tr>
+    </table>
     </section>
     <aside>
-      
+      <p>Here are a couple of shapes I enjoy:</p>
+      <canvas width="200" height="200"></canvas>
+      <svg width="100" height="100">
+        <circle stroke="blue" fill="green"/>
+      </svg>
     </aside>
   </main>
   <hr>
   <footer>
     <form id="endform">
-      <label>My name is:</label><br>
-      <input type="text"><br>
-      <label>My favorite color is:</label><br>
-      <input type="color"><br>
-      <label>My favorite number is:</label><br>
-      <input type="number"><br>
-      <label>Nobody should call me after:</label><br>
-      <input type="time"><br>
-      <label>My favorite website is:</label><br>
-      <input type="url"><br>
+      <fieldset>
+        <legend>About you:</legend>
+        <label>My name is:</label><br>
+        <input type="text"><br>
+        <label>My favorite color is:</label><br>
+        <input type="color"><br>
+        <label>My favorite number is:</label><br>
+        <input type="number"><br>
+        <label>Nobody should call me after:</label><br>
+        <input type="time"><br>
+        <label>My favorite website is:</label><br>
+        <input type="url"><br>
+        <label>My favorite kind of animals are:</label>
+        <select  name="animals">
+          <optgroup label="Cats">
+            <option">House cats</option>
+            <option>Wildcats</option>
+          </optgroup>
+          <optgroup label="Birds">
+            <option>Tropical birds</option>
+            <option>Predatory birds</option>
+          </optgroup>
+        </select>
+        <label>My favorite ice cream flavor is:</label>
+        <input list="icecream">
+        <datalist id="icecream">
+          <option value="vanilla">
+          <option value="chocolate">
+          <option value="strawberry">
+          <option value="mint chip">
+          <option value="banana">
+        </datalist>
+      </fieldset>
       <label>I visited this site on:</label><br>
       <input type="date"><br>
       <label>If I had a fake email, it would be:</label><br>
@@ -61,9 +171,14 @@
       <label> every minute</label><br>
       <input type="radio">
       <label> I wish I hadn't even visited it this time</label><br>
+      <label for="story">Tell us your story:</label>
+      <textarea rows="5" cols="25">My visit here was...</textarea>
       <button type="submit" form="endform">Submit Form</button><br>
       <input type="reset"><br>
     </form>
+    <template>
+      <h3>Easter Egg!</h3>
+    </template>
   </footer>
 </body>
   
