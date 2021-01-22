@@ -1,0 +1,9 @@
+#school {
+  width:
+  border-style: dotted solid double;
+  border-color: red;
+  border-width: 10px;
+  border-radius: 25% 10%;
+  padding: 1cm;
+  margin: 10mm;
+}
