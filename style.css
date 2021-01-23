@@ -1,3 +1,4 @@
+/* Setting up box model */
 #school {
   width: 300px;
   border-style: dotted solid double;
@@ -14,6 +15,7 @@
   margin-left: 80px;
 }
 
+/* Another box, no border */
 nav {
  margin: 25px 25px 100px 100px; 
  padding: 10px 10px 10px 10px;
@@ -21,6 +23,7 @@ nav {
  display: inline;
 }
 
+/* Color and text changes */
 .likes {
   color: #FFF;
   display: block;
