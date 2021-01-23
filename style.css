@@ -28,5 +28,34 @@ nav {
 
 main, header {
   font-family: 'Yusei Magic', sans-serif;
-  
+  margin: auto;
+  position: static;
+}
+
+div > p {
+  color: hsl(104, 45%, 22%);
+  text-decoration: underline;
+  text-align: left;
+  position: relative;
+  right: 10px;
+}
+
+ul ~ li {
+  color: hsla(120,100%,50%,0.3);
+}
+
+p.likes {
+  background-color: red;
+}
+
+a:hover {
+  color: blue;
+}
+
+label + * {
+  style: inline;
+}
+
+*:active {
+   color: green;
 }
