@@ -1,0 +1,32 @@
+#school {
+  width: 300px;
+  border-style: dotted solid double;
+  border-color: red;
+  border-width: 10px;
+  border-radius: 25% 10%;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+  padding-left: 1cm;
+  padding-right: 1cm;
+  margin-top: 10vw;
+  margin-bottom: 10em;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+nav {
+ margin: 25px 25px 100px 100px; 
+ padding: 10px 10px 10px 10px;
+ height: auto;
+ display: inline;
+}
+
+.likes {
+  color: #FFF;
+  display: block;
+}
+
+main, header {
+  font-family: 'Yusei Magic', sans-serif;
+  
+}
