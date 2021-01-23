@@ -38,7 +38,4 @@
 
 ### Overview
 * Progress: on track?
-* Changes to sprint plan
-  1.
-  2.
-  3.
+* Any changes to sprint plan?
